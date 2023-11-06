@@ -1,3 +1,8 @@
+# created_data
+created_data/
+data/Motor_Vehicle_Collisions.csv
+assignment_docs/NYC OpenData Data Exploration.pptx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
