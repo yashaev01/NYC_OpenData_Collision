@@ -1,0 +1,47 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Hypothesis Testing for Proportions}
+
+\begin{enumerate}
+    \item State the Hypotheses:
+    \begin{align*}
+    H_0 &: P_1 = P_2 \\
+    H_a &: P_1 \neq P_2
+    \end{align*}
+    where \(p_1\) and \(p_2\) are the proportions of injured (or killed) per crash for holidays and non-holidays, respectively.
+
+    \item \(\alpha = 0.05\) is used.
+
+    \item Calculate the Test Statistic:
+    The Z-test statistic for the difference between two proportions is given by
+    \[
+    Z = \frac{{\hat{p}_1 - \hat{p}_2}}{{\sqrt{\hat{p}(1 - \hat{p})\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}}}
+    \]
+    where
+    \begin{itemize}
+        \item \(\hat{p}_1\) and \(\hat{p}_2\) are the sample proportions,
+        \item \(\hat{p}\) is the pooled sample proportion,
+        \item \(n_1\) and \(n_2\) are the sample sizes,
+        \[
+        \hat{p} = \frac{{n_1 \hat{p}_1 + n_2 \hat{p}_2}}{{n_1 + n_2}}
+        \]
+    \end{itemize}
+
+    \item Find the P-Value:
+    The P-value is the probability of observing a test statistic as extreme as the one calculated, assuming the null hypothesis is true.
+
+    \item Decision Making:
+    \begin{itemize}
+        \item If \(P < \alpha\), reject the null hypothesis.
+        \item If \(P > \alpha\), fail to reject the null hypothesis.
+    \end{itemize}
+\end{enumerate}
+
+\section{Analysis}
+Performingthis test for both the "injured per crash" and "killed per crash" ratios for holidays and non-holidays.
+\end{document}
+
